@@ -1,0 +1,16 @@
+$TTL	604800 ;
+@	IN	SOA	izanramos.test. admin.izanramos.test. (
+			2026052401
+			604800
+			86400
+			2419200
+			38400	)
+;
+@       IN      NS      atos.izanramos.test.
+@       IN      MX      20 atos.izanramos.test.
+atos    IN      A       192.168.57.10
+portos  IN      A       192.168.56.11
+aramis  IN      A       192.168.56.12
+
+www     IN      CNAME   portos.izanramos.test.
+ftp     IN      CNAME   portos.izanramos.test.

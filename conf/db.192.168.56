@@ -1,0 +1,11 @@
+$TTL	604800
+56.168.192.in-addr.arpa.	IN	SOA	izanramos.test. admin.izanramos.test. (
+			2026052401	; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+56.168.192.in-addr.arpa.	IN	NS	atos.izanramos.test.
+11.56.168.192.in-addr.arpa.	IN	PTR	portos.izanramos.test.
+12.56.168.192.in-addr.arpa.	IN	PTR	aramis.izanramos.test.
