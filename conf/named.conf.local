@@ -7,8 +7,3 @@ zone "56.168.192.in-addr.arpa" {
 	type master;
 	file "/etc/bind/db.192.168.56";
 };
-
-zone "57.168.192.in-addr.arpa" {
-    type master;
-    file "/etc/bind/db.192.168.57";
-};
