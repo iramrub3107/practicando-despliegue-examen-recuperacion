@@ -79,15 +79,16 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "atos" do |atos|
     atos.vm.hostname = "atos"
-    atos.vm.network "private_network", ip: "192.168.57.10"
+    atos.vm.network "private_network", ip: "192.168.56.10"
+    config.vm.provision "shell", path: "bootstrap-atos.sh"
   end
   config.vm.define "portos" do |portos|
     portos.vm.hostname = "portos"
-    portos.vm.network "private_network", ip: "192.168.57.11"
-    config.vm.provision "shell", path: "bootstrap.sh"
+    portos.vm.network "private_network", ip: "192.168.56.11"
+    config.vm.provision "shell", path: "bootstrap-portos.sh"
   end
   config.vm.define "aramis" do |aramis|
     aramis.vm.hostname = "aramis"
-    aramis.vm.network "private_network", ip: "192.168.57.12"
+    aramis.vm.network "private_network", ip: "192.168.56.12"
   end
 end
