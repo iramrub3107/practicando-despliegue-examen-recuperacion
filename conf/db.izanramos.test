@@ -6,11 +6,12 @@ $TTL	604800 ;
 			2419200
 			38400	)
 ;
-@       IN      NS      atos.izanramos.test.
-@       IN      MX      20 atos.izanramos.test.
-atos    IN      A       192.168.57.10
-portos  IN      A       192.168.56.11
-aramis  IN      A       192.168.56.12
+@			IN      NS	atos.izanramos.test.
+atos.izanramos.test.    IN      A       192.168.57.10
+portos.izanramos.test.  IN      A       192.168.56.11
+aramis.izanramos.test.  IN      A       192.168.56.12
 
 www     IN      CNAME   portos.izanramos.test.
 ftp     IN      CNAME   portos.izanramos.test.
+
+@	IN	MX	20	atos.izanramos.test.
